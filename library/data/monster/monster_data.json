@@ -14597,8 +14597,8 @@
     "weapon_def": 300,
     "magic_def": 350,
     "avoidability": 35,
-    "required_accuracy": 129,
-    "accuracy_level_decrease": 4.67,
+    "required_accuracy": 147,
+    "accuracy_level_decrease": 5.34,
     "exp": 800,
     "meso_range": ["미상"],
     "modifiers": "X",
@@ -14628,6 +14628,7 @@
     "region": "타이베이 101, 대만"
  }
 ]
+
 
 
 
