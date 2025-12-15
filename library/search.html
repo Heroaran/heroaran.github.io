@@ -150,6 +150,35 @@
       right: 20px;
       background-color: #ff7043;
     }
+    .request-box {
+  margin: 10px 0 20px;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+body.dark-mode .request-box {
+  background: #252525;
+  border-color: #444;
+}
+
+.request-text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.request-btn {
+  background-color: #ff7043;
+}
+
+.request-btn:hover {
+  background-color: #e55d2e;
+}
     .top-right-button:hover {
       background-color: #e55d2e;
     }
@@ -234,6 +263,13 @@
         width: 100% !important;
         max-height: 200px;
       }
+       .request-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .request-btn {
+    width: 100%;
+  }
       h1 {
         font-size: 1.4rem;
       }
@@ -250,7 +286,12 @@
       <button id="searchBtn">검색</button>
       <button id="filterToggle">⚙️ 필터</button>
       <button id="darkModeToggle">🌙 다크 모드</button>
-    </div>
+     <div class="request-box">
+      <div class="request-text">
+      몬스터/아이템의 정보가 틀린것이 있나요? <strong>수정을 요청해주세요.</strong>
+      </div>
+       <button id="requestFixBtn" class="request-btn">✏️ 수정요청</button>
+      </div>
 
     <!-- 🔽 필터 선택 영역 -->
     <div id="filters">
@@ -712,9 +753,17 @@ document.addEventListener('click', e => {
     }
 
     loadData();
+    document.getElementById('requestFixBtn').addEventListener('click', () => {
+  window.open(
+    'https://forms.gle/7M8q4qivoWKJAvst7', // ✅ 네가 원하는 주소
+    '_blank',
+    'noopener,noreferrer'
+  );
+});
   </script>
 </body>
 </html>
+
 
 
 
