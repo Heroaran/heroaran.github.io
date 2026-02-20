@@ -14629,7 +14629,7 @@
  },
   {
     "name": "문지기 크로키",
-    "level": "미상",
+    "level": 130,
     "hp": "미상",
     "mp": "미상",
     "weapon_def": "미상",
@@ -14637,7 +14637,7 @@
     "avoidability": "미상",
     "required_accuracy": "미상",
     "accuracy_level_decrease": "미상",
-    "exp": "미상",
+    "exp": "28950",
     "meso_range": ["미상"],
     "modifiers": "X",
     "drops": [
@@ -14667,7 +14667,7 @@
  },
   {
     "name": "레인디어",
-    "level": "미상",
+    "level": 136,
     "hp": "미상",
     "mp": "미상",
     "weapon_def": "미상",
@@ -14675,7 +14675,7 @@
     "avoidability": "미상",
     "required_accuracy": "미상",
     "accuracy_level_decrease": "미상",
-    "exp": "미상",
+    "exp": 37500,
     "meso_range": ["미상"],
     "modifiers": "X",
     "drops": [
@@ -14707,7 +14707,7 @@
  },
   {
     "name": "블러드 레인디어",
-    "level": "미상",
+    "level": 138,
     "hp": "미상",
     "mp": "미상",
     "weapon_def": "미상",
@@ -14715,7 +14715,7 @@
     "avoidability": "미상",
     "required_accuracy": "미상",
     "accuracy_level_decrease": "미상",
-    "exp": "미상",
+    "exp": "61672",
     "meso_range": ["미상"],
     "modifiers": "X",
     "drops": [
@@ -14747,7 +14747,7 @@
  },
   {
     "name": "베어울프",
-    "level": "미상",
+    "level": 140,
     "hp": "미상",
     "mp": "미상",
     "weapon_def": "미상",
@@ -14755,7 +14755,7 @@
     "avoidability": "미상",
     "required_accuracy": "미상",
     "accuracy_level_decrease": "미상",
-    "exp": "미상",
+    "exp": "44700",
     "meso_range": ["미상"],
     "modifiers": "X",
     "drops": [
@@ -14787,7 +14787,7 @@
  },
   {
     "name": "그레이 벌쳐",
-    "level": "미상",
+    "level": 143,
     "hp": "미상",
     "mp": "미상",
     "weapon_def": "미상",
@@ -14795,7 +14795,7 @@
     "avoidability": "미상",
     "required_accuracy": "미상",
     "accuracy_level_decrease": "미상",
-    "exp": "미상",
+    "exp": "48432",
     "meso_range": ["미상"],
     "modifiers": "X",
     "drops": [
@@ -14828,7 +14828,7 @@
  },
   {
     "name": "캐슬 골렘",
-    "level": "미상",
+    "level": 145,
     "hp": "미상",
     "mp": "미상",
     "weapon_def": "미상",
@@ -14836,7 +14836,7 @@
     "avoidability": "미상",
     "required_accuracy": "미상",
     "accuracy_level_decrease": "미상",
-    "exp": "미상",
+    "exp": "54270",
     "meso_range": ["미상"],
     "modifiers": "X",
     "drops": [
@@ -14868,6 +14868,7 @@
     "region": "사자왕의 성, 엘나스"
  }
 ]
+
 
 
 
