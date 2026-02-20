@@ -374,9 +374,21 @@ body.dark-mode .request-box {
       ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c])
     ) || '';
 
-    const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
-    const sanitizeName = name => name.replace(/[^가-힣a-zA-Z0-9]/g, '_');
-    const normalize = text => sanitizeName(stripGender(text.toLowerCase()));
+    const cleanText = (s='') =>
+  s
+    .normalize('NFC')                         // 한글 정규화
+    .replace(/\u00A0/g, ' ')                  // NBSP → 일반 공백
+    .replace(/[\u200B-\u200D\uFEFF]/g, '')    // zero-width 제거
+    .replace(/[·•]/g, ' ')                    // 중점류(있으면)
+    .replace(/\s+/g, ' ')                     // 공백 뭉침 정리
+    .trim();
+
+const stripGender = name => cleanText(name).replace(/\s*\([MF]\)\s*$/i, '').trim();
+
+// 기존처럼 '_'를 쓰고 싶으면 유지해도 됨(최소 변경)
+const sanitizeName = name => name.replace(/[^가-힣a-zA-Z0-9]/g, '_');
+
+const normalize = text => sanitizeName(stripGender(cleanText(text).toLowerCase()));
 
     const getItemImageName = name => {
       if (/스킬북/i.test(name)) return "스킬북";
@@ -642,15 +654,15 @@ const monsterMatches = [...monsterData, ...bossData].filter(m => {
 
   // 몬스터 이름 매치
   const monsterMatches = [...monsterData, ...bossData].filter(m =>
-    stripGender(m.name).toLowerCase().includes(query)
+  normalize(m.name).includes(normalize(query))
   );
 
   // 아이템 이름 매치
   const itemSet = new Set();
   [...monsterData, ...bossData].forEach(m =>
     (m.drops || []).forEach(d => {
-      if (stripGender(d).toLowerCase().includes(query)) {
-        itemSet.add(d);
+      if (normalize(stripGender(d)).includes(normalize(query))) {
+  itemSet.add(d);
       }
     })
   );
@@ -763,6 +775,7 @@ document.addEventListener('click', e => {
   </script>
 </body>
 </html>
+
 
 
 
