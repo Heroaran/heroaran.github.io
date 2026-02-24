@@ -745,9 +745,10 @@ document.addEventListener('click', e => {
     });
 
     document.getElementById('filterToggle').addEventListener('click', () => {
-      const filters = document.getElementById('filters');
+     const filters = document.getElementById('filters');
       const notice  = document.getElementById('filterNotice');
-      const isHidden = (filters.style.display === 'none');
+
+      const isHidden = window.getComputedStyle(filters).display === 'none';
 
       filters.style.display = isHidden ? 'block' : 'none';
       notice.style.display  = isHidden ? 'block' : 'none';
@@ -777,6 +778,7 @@ document.addEventListener('click', e => {
   </script>
 </body>
 </html>
+
 
 
 
