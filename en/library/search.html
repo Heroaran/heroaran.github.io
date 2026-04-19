@@ -210,19 +210,25 @@ body.dark-mode .request-box {
       const monsterMatches=[...monsterData,...bossData].filter(m=>{
         const nameMatch=!terms.length||terms.some(t=>normalize(m.name).includes(t));
         const levelMatch=!m.level||(m.level>=minLevel&&m.level<=maxLevel);
-      let weaknessMatch = true;
+    let weaknessMatch = true;
 if (weakness) {
   const modifiers = (m.modifiers || '')
     .split('/')
-    .map(v => v.trim().toLowerCase());
+    .map(v => v.trim().toLowerCase().replace(/\s+/g, ' '));
 
-  if (weakness === 'possible heal attack') {
-    weaknessMatch = modifiers.some(v =>
-      v === 'Possible Heal attack'
-    );
+  // ✅ 허용할 접두어
+  const allowedPrefixes = ['weak', 'possible'];
+
+  if (weakness === 'Heal') {
+    weaknessMatch = modifiers.some(v => v === 'can be healed');
   } else {
-    const target = `weak ${weakness.toLowerCase()}`;
-    weaknessMatch = modifiers.some(v => v === target);
+    const target = weakness.toLowerCase();
+
+    weaknessMatch = modifiers.some(v => {
+      return allowedPrefixes.some(prefix => 
+        v === `${prefix} ${target}`
+      );
+    });
   }
 }
         let regionMatch=true; if(region) regionMatch=m.region&&m.region.includes(region);
