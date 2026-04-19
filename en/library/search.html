@@ -112,7 +112,7 @@ body.dark-mode .request-box {
         <select id="weaknessSelect">
           <option value="">All</option><option value="Fire">Fire</option><option value="Ice">Ice</option>
           <option value="Lightning">Lightning</option><option value="Holy">Holy</option><option value="Poison">Poison</option>
-          <option value="Heal">Can be healed Attack</option>
+          <option value="Possible Heal attack">Possible Heal attack</option>
         </select>
       </label>
       <label>
@@ -216,7 +216,7 @@ if (weakness) {
     .split('/')
     .map(v => v.trim().toLowerCase());
 
-  if (weakness === 'Heal') {
+  if (weakness === 'Possible Heal attack') {
     weaknessMatch = modifiers.some(v =>
       v === 'Possible Heal attack'
     );
