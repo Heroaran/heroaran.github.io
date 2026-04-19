@@ -218,15 +218,11 @@ if (weakness) {
 
   if (weakness === 'Heal') {
     weaknessMatch = modifiers.some(v =>
-      v === 'can be healed' || v === 'heal' || v === 'weak heal'
+      v === 'can be healed'
     );
   } else {
-    weaknessMatch = modifiers.some(v => {
-      return (
-        v.includes('weak') &&
-        v.includes(weakness.toLowerCase())
-      );
-    });
+    const target = `weak ${weakness.toLowerCase()}`;
+    weaknessMatch = modifiers.some(v => v === target);
   }
 }
         let regionMatch=true; if(region) regionMatch=m.region&&m.region.includes(region);
