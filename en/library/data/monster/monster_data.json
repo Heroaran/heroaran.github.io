@@ -9314,7 +9314,7 @@
       -1,
       -1
     ],
-    "modifiers": "Weak Poison / Weak Fire",
+    "modifiers": "Weak Poison / Strong Fire",
     "drops": [
       "Warrior Potion",
       "Steel Ore",
@@ -9353,7 +9353,7 @@
       -1,
       -1
     ],
-    "modifiers": "Weak Poison / Weak Fire",
+    "modifiers": "Weak Poison / Strong Fire",
     "drops": [
       "Orange Potion",
       "Speed Potion",
@@ -9967,7 +9967,7 @@
       -1,
       -1
     ],
-    "modifiers": "Weak Holy / Strong Fire (can Heal attack)",
+    "modifiers": "Weak Holy / Strong Fire (Possible Heal attack)",
     "drops": [
       "Mana Elixir",
       "Power Elixir",
@@ -10018,7 +10018,7 @@
       -1,
       -1
     ],
-    "modifiers": "Strong Fire, Weak Poison",
+    "modifiers": "Strong Fire, Strong Poison",
     "drops": [
       "Power Elixir",
       "Reindeer Milk",
@@ -11672,7 +11672,7 @@
     "accuracy_level_decrease": 3.333,
     "exp": 270,
     "meso_range": [337, 501],
-    "modifiers": "Weak to Poison",
+    "modifiers": "Weak Poison",
     "drops": [
         "Rash's Furball",
         "Mana Elixir",
