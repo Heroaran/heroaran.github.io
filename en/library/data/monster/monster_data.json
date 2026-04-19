@@ -999,7 +999,7 @@
       44,
       66
     ],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
       "Charm of the Undead",
       "Orange Potion",
@@ -2349,7 +2349,7 @@
       56,
       84
     ],
-    "modifiers": "Weak Holy, Weak Fire (Possible Heal attack)",
+    "modifiers": "Weak Holy, Weak Fire / Possible Heal attack",
     "drops": [
       "Tablecloth",
       "White Potion",
@@ -2872,7 +2872,7 @@
       96,
       144
     ],
-    "modifiers": "X (Possible Heal attack)",
+    "modifiers": "X / Possible Heal attack",
     "drops": [
       "Cog",
       "Mystic Shield",
@@ -3298,7 +3298,7 @@
       104,
       156
     ],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
       "Cursed Doll",
       "White Potion",
@@ -3348,7 +3348,7 @@
       95,
       135
     ],
-    "modifiers": "Weak Ice / Resist Fire (Possible Heal attack)",
+    "modifiers": "Weak Ice / Resist Fire / Possible Heal attack",
     "drops": [
       "Worn Paper Lantern",
       "Dark Crystal Ore",
@@ -3614,7 +3614,7 @@
       116,
       174
     ],
-    "modifiers": "X (Possible Heal attack)",
+    "modifiers": "X / Possible Heal attack",
     "drops": [
       "Cog",
       "Diamond Ore",
@@ -4006,7 +4006,7 @@
       135,
       208
     ],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
       "Skeledog's Bone",
       "White Potion",
@@ -4634,7 +4634,7 @@
       172,
       258
     ],
-    "modifiers": "X (Possible Heal attack)",
+    "modifiers": "X / Possible Heal attack",
     "drops": [
       "Cog",
       "Garnet Ore",
@@ -4814,7 +4814,7 @@
       172,
       258
     ],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
       "Dirty Bandage",
       "Scroll for Cape for STR 10%",
@@ -4907,7 +4907,7 @@
       176,
       264
     ],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
       "Medicine With Weird Vibes",
       "Dark Crystal Ore",
@@ -6239,7 +6239,7 @@
       273,
       408
     ],
-    "modifiers": "Weak Holy / Immune Poison (Possible Heal attack)",
+    "modifiers": "Weak Holy / Immune Poison / Possible Heal attack",
     "drops": [
       "Zombie's Lost Tooth",
       "Blue Potion",
@@ -6341,7 +6341,7 @@
       273,
       408
     ],
-    "modifiers": "Weak Holy / Immune Poison (Possible Heal attack)",
+    "modifiers": "Weak Holy / Immune Poison / Possible Heal attack",
     "drops": [
       "Zombie's Lost Tooth",
       "Blue Potion",
@@ -6787,7 +6787,7 @@
       280,
       420
     ],
-    "modifiers": "Weak Ice, Weak Fire, Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Ice, Weak Fire, Weak Holy / Possible Heal attack",
     "drops": [
       "Ghost Headband",
       "LUK Crystal Ore",
@@ -7022,7 +7022,7 @@
       328,
       492
     ],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
       "Pelvic Bone",
       "White Potion",
@@ -7076,7 +7076,7 @@
       328,
       492
     ],
-    "modifiers": "Weak Holy / Resist Ice, Resist Lightning (Possible Heal attack)",
+    "modifiers": "Weak Holy / Resist Ice, Resist Lightning / Possible Heal attack",
     "drops": [
       "Zombie Teddy Bear",
       "White Potion",
@@ -7429,7 +7429,7 @@
       332,
       498
     ],
-    "modifiers": "Weak Holy / Resist Lightning / Immune Ice (Possible Heal attack)",
+    "modifiers": "Weak Holy / Resist Lightning / Immune Ice / Possible Heal attack",
     "drops": [
       "Free Spirit",
       "Leather",
@@ -7670,7 +7670,7 @@
       336,
       509
     ],
-    "modifiers": "Weak Fire /Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Fire /Weak Holy / Possible Heal attack",
     "drops": [
       "Sealed-Up Grandpa Clock",
       "Steel Ore",
@@ -7911,7 +7911,7 @@
       374,
       575
     ],
-    "modifiers": "Weak Holy / Resist Ice / Immune Poison (Possible Heal attack)",
+    "modifiers": "Weak Holy / Resist Ice / Immune Poison / Possible Heal attack",
     "drops": [
       "Horse Skull",
       "Mana Elixir",
@@ -8176,7 +8176,7 @@
       648,
       960
     ],
-    "modifiers": " Weak Holy  (Possible Heal attack)",
+    "modifiers": " Weak Holy  / Possible Heal attack",
     "drops": [
       "Evil Spirit",
       "Mana Elixir",
@@ -8562,7 +8562,7 @@
       364,
       545
     ],
-    "modifiers": "Weak Holy, Weak Fire (Possible Heal attack)",
+    "modifiers": "Weak Holy, Weak Fire / Possible Heal attack",
     "drops": [
       "Sealed Teddy Bear",
       "All Cure Potion",
@@ -8683,7 +8683,7 @@
       408,
       610
     ],
-    "modifiers": " Weak Holy / Resist Ice, Resist Lightning (Possible Heal attack)",
+    "modifiers": " Weak Holy / Resist Ice, Resist Lightning / Possible Heal attack",
     "drops": [
       "Binding Bridle",
       "Power Elixir",
@@ -8853,7 +8853,7 @@
       622,
       948
     ],
-    "modifiers": "Weak Holy, Weak Fire / Resist Ice (Possible Heal attack)",
+    "modifiers": "Weak Holy, Weak Fire / Resist Ice / Possible Heal attack",
     "drops": [
       "Sealed Bottle",
       "Power Elixir",
@@ -8961,7 +8961,7 @@
       416,
       623
     ],
-    "modifiers": "Weak Holy, Weak Fire / Immune Ice (Possible Heal attack)",
+    "modifiers": "Weak Holy, Weak Fire / Immune Ice / Possible Heal attack",
     "drops": [
       "Ice Piece",
       "White Potion",
@@ -9070,7 +9070,7 @@
       697,
       1020
     ],
-    "modifiers": "Weak Holy / Immune Poison (Possible Heal attack)",
+    "modifiers": "Weak Holy / Immune Poison / Possible Heal attack",
     "drops": [
       "Kimono Piece",
       "Mana Elixir",
@@ -9109,7 +9109,7 @@
       664,
       996
     ],
-    "modifiers": " Weak Holy / Immune Ice (Possible Heal attack)",
+    "modifiers": " Weak Holy / Immune Ice / Possible Heal attack",
     "drops": [
       "Thanatos Strap",
       "Silver Ore",
@@ -9967,7 +9967,7 @@
       -1,
       -1
     ],
-    "modifiers": "Weak Holy / Strong Fire (Possible Heal attack)",
+    "modifiers": "Weak Holy / Strong Fire / Possible Heal attack",
     "drops": [
       "Mana Elixir",
       "Power Elixir",
@@ -11224,7 +11224,7 @@
       309,
       475
     ],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
       "Mana Elixir",
       "Diamond Ore",
@@ -11273,7 +11273,7 @@
       332,
       498
     ],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
       "White Potion",
       "Mana Elixir",
@@ -11318,7 +11318,7 @@
       379,
       583
     ],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
       "Mana Elixir",
       "Elixir",
@@ -11426,7 +11426,7 @@
     "accuracy_level_decrease": 3.73,
     "exp": 850,
     "meso_range": [636, 921],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
       "Power Elixir",
       "Orihalcon Ore",
@@ -12136,7 +12136,7 @@
     "accuracy_level_decrease": 3.733,
     "exp": 1600,
     "meso_range": [668, 953],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
         "Kentaurus's Skull",
         "Mana Elixir",
@@ -12785,7 +12785,7 @@
     "accuracy_level_decrease": 5.066,
     "exp": 4500,
     "meso_range": [754, 1039],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
         "Broken Horn",
         "Unagi",
@@ -12840,7 +12840,7 @@
     "accuracy_level_decrease": 5.066,
     "exp": 4750,
     "meso_range": [760, 1045],
-    "modifiers": "Weak Holy (Possible Heal attack)",
+    "modifiers": "Weak Holy / Possible Heal attack",
     "drops": [
         "Old Neck Bone",
         "Unagi",
