@@ -210,13 +210,25 @@ body.dark-mode .request-box {
       const monsterMatches=[...monsterData,...bossData].filter(m=>{
         const nameMatch=!terms.length||terms.some(t=>normalize(m.name).includes(t));
         const levelMatch=!m.level||(m.level>=minLevel&&m.level<=maxLevel);
-       let weaknessMatch = true;
-      if (weakness) {
-        weaknessMatch = m.modifiers 
-          && m.modifiers.includes(weakness) 
-          && !m.modifiers.includes("Resist") 
-          && !m.modifiers.includes("Immune");
-      }
+      let weaknessMatch = true;
+if (weakness) {
+  const modifiers = (m.modifiers || '')
+    .split('/')
+    .map(v => v.trim().toLowerCase());
+
+  if (weakness === 'Heal') {
+    weaknessMatch = modifiers.some(v =>
+      v === 'can be healed' || v === 'heal' || v === 'weak heal'
+    );
+  } else {
+    weaknessMatch = modifiers.some(v => {
+      return (
+        v.includes('weak') &&
+        v.includes(weakness.toLowerCase())
+      );
+    });
+  }
+}
         let regionMatch=true; if(region) regionMatch=m.region&&m.region.includes(region);
         let bossMatch=true; if(bossOnly) bossMatch=bossData.includes(m);
         return nameMatch&&levelMatch&&weaknessMatch&&regionMatch&&bossMatch;
