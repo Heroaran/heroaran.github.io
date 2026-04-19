@@ -112,7 +112,7 @@ body.dark-mode .request-box {
         <select id="weaknessSelect">
           <option value="">All</option><option value="Fire">Fire</option><option value="Ice">Ice</option>
           <option value="Lightning">Lightning</option><option value="Holy">Holy</option><option value="Poison">Poison</option>
-          <option value="Possible Heal attack">Possible Heal attack</option>
+          <option value="heal">Possible Heal attack</option>
         </select>
       </label>
       <label>
@@ -216,20 +216,23 @@ if (weakness) {
     .split('/')
     .map(v => v.trim().toLowerCase().replace(/\s+/g, ' '));
 
-  // ✅ 허용할 접두어
   const allowedPrefixes = ['weak', 'possible'];
 
-  if (weakness === 'Heal') {
-    weaknessMatch = modifiers.some(v => v === 'can be healed');
-  } else {
-    const target = weakness.toLowerCase();
+  const target = weakness.toLowerCase();
 
-    weaknessMatch = modifiers.some(v => {
-      return allowedPrefixes.some(prefix => 
-        v === `${prefix} ${target}`
-      );
-    });
-  }
+  weaknessMatch = modifiers.some(v => {
+    // ✅ 일반 속성 (Ice, Fire 등)
+    if (allowedPrefixes.some(prefix => v === `${prefix} ${target}`)) {
+      return true;
+    }
+
+    // ✅ Heal도 동일 구조로 처리
+    if (target === 'heal' && v === 'possible heal attack') {
+      return true;
+    }
+
+    return false;
+  });
 }
         let regionMatch=true; if(region) regionMatch=m.region&&m.region.includes(region);
         let bossMatch=true; if(bossOnly) bossMatch=bossData.includes(m);
